@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Professionnel</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eef1f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .report-container {
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #1E293B;
+            text-align: center;
+        }
+        p {
+            line-height: 1.8;
+            color: #4B5563;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border-left: 4px solid #3B82F6;
+            background: #f8fafc;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            color: #6B7280;
+        }
+        .editable {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 30px;
+            border-radius: 5px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1 contenteditable="true">Rapport d'Analyse</h1>
+        <p><strong>Date :</strong> <span id="date"></span></p>
+        
+        <div class="section">
+            <h2 contenteditable="true">1. Introduction</h2>
+            <p class="editable" contenteditable="true">L'objectif de ce rapport est d'évaluer les performances des systèmes industriels en fonction des données collectées.</p>
+        </div>
+        
+        <div class="section">
+            <h2 contenteditable="true">2. Données collectées</h2>
+            <p class="editable" contenteditable="true">Les données ont été collectées sur une période de trois mois et analysées à l'aide d'outils statistiques avancés.</p>
+        </div>
+        
+        <div class="section">
+            <h2 contenteditable="true">3. Analyse des résultats</h2>
+            <p class="editable" contenteditable="true">Les résultats montrent une amélioration de 15% de l'efficacité de la chaîne de production.</p>
+        </div>
+        
+        <div class="section">
+            <h2 contenteditable="true">4. Conclusion et recommandations</h2>
+            <p class="editable" contenteditable="true">Pour améliorer davantage la performance, nous recommandons d'investir dans de nouveaux équipements et de former le personnel sur les dernières technologies.</p>
+        </div>
+        
+        <div class="footer">Rapport généré automatiquement | Entreprise XYZ</div>
+    </div>
+
+    <script>
+        document.getElementById("date").innerText = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
